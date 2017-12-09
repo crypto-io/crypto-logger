@@ -11,6 +11,7 @@ before_script:
 - backed -b
 script: npm run test
 deploy:
+  skip_cleanup: true
   provider: npm
   email: vandeurenglenn@gmail.com
   api_key:

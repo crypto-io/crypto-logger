@@ -1,6 +1,6 @@
 {
   "name": "crypto-logger",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "description": "The node responsible for connecting to the ipfs network.",
   "main": "dist/logger.js",
   "repository": "https://github.com/crypto-io/crypto-logger",
