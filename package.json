@@ -1,17 +1,12 @@
 {
   "name": "crypto-logger",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "description": "The node responsible for connecting to the ipfs network.",
   "main": "dist/logger.js",
   "repository": "https://github.com/crypto-io/crypto-logger",
   "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
   "license": "copyright",
   "private": false,
-  "files": [
-    "dist/logger.js",
-    "dist/logger.js.map",
-    "dist/logger.min.js"
-  ],
   "scripts": {
     "test": "node test/index.js"
   },
@@ -30,5 +25,8 @@
   },
   "devDependencies": {
     "tape": "^4.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
