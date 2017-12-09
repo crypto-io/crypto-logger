@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+cache:
+  yarn: true
+before_script:
+- npm install -g backed-cli
+- npm install
+- backed -b
+script: npm run test
+deploy:
+  provider: npm
+  email: vandeurenglenn@gmail.com
+  api_key:
+    secure: AL2GwCuTS2pgPEIK128op6PCmih1MAJpc/3Zoh0tDJEgDaXom94Qv7PCWej8yWg+Ajuc51wEDd9j1LqhhuuZRsFpKEK6Hy0yjx73wn8OJkiC1ZFSS0+H3AgJDsNHg54lY4v1Pua/F38mua8u8ZouYwq80Uv58IbIcDW1Yl3rfAsXfXnEj7cQoPOzSon7KYeDXGHvwYn6Dbo+TF6ZvfbjPNleU4E3irV/qemAvc3r0fF+IcrgoI3QRiIq5By8L3F9TiuK4t+YaR6n5iqmmhRopr6jWhctyVWXvYUkhdQFZcg2A9twxnA+wY6objieTfDnJ0VGNuK/xKbOO+9vgr+eR0tE4hjhVjmgvwdl7/uXSHTCSFFK2x9SRNIk0JEskTy3wxoABRsNrASe5eUKR6ra8AoXRqYXkYFIodztBlSF1I1mFs8lDP4RuyngmOvAA9e8HZNra08Er1WB1TqE9NPP0P38cLFKRu0dbckBHHQuCzI6WpL6W36rk+hFzDkPnLOs6P2XDimpKGheZVqmmhWBRZBoVv77gm0XUOucunxMEDU9b+pwlN1P/L9iolUCNVuHPEmadKpZoFdDexGNz4ngFzFXD5MTtHI/AVyDmn/+6UQ4fFDrdP7vbvUfHNzmfWiH4sErOY6sPYW9b5iN7+lriOttQbpflwXwhqHxkHBb3no=
+  on:
+    tags: true
+    repo: crypto-io/crypto-logger
